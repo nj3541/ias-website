@@ -9,7 +9,14 @@
   <body>
     <header>
       <nav>
-        <div class="logo">IAS IEEE</div>
+        <div class="logo">
+          <img src="IAS Logo.jpg" alt="IAS Logo" class="logo-img ias-logo" />
+          <img
+            src="IEEE Blue colour logo.jpg"
+            alt="IEEE Logo"
+            class="logo-img ieee-logo"
+          />
+        </div>
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
@@ -19,11 +26,14 @@
     </header>
     <main>
       <section id="home" class="hero">
-        <h1>Welcome to IEEE IAS</h1>
-        <p>
-          The Industry Applications Society: Advancing the Theory and Practice
-          of Electrical and Electronic Engineering in Industry
-        </p>
+        <div class="hero-content">
+          <h1>Welcome to IEEE IAS</h1>
+          <p class="hero-subtitle">
+            Advancing the Theory and Practice of Electrical and Electronic
+            Engineering in Industry
+          </p>
+          <a href="#about" class="cta-btn">Learn More</a>
+        </div>
       </section>
       <section id="about">
         <h2>About IEEE IAS</h2>
@@ -34,11 +44,155 @@
           applications. IAS provides resources, technical knowledge, and
           networking opportunities for engineers, researchers, and students
           interested in industrial power, automation, energy systems, and
-          emerging technologies.<br /><br />
-          Our mission is to foster innovation, share knowledge, and support the
-          professional growth of our members through conferences, publications,
-          and educational programs.
+          emerging technologies.
         </p>
+        <div class="counters">
+          <div class="counter-box">
+            <span class="counter" data-target="500">0</span>
+            <p>Members</p>
+          </div>
+          <div class="counter-box">
+            <span class="counter" data-target="30">0</span>
+            <p>Events Hosted</p>
+          </div>
+          <div class="counter-box">
+            <span class="counter" data-target="10">0</span>
+            <p>Years of Excellence</p>
+          </div>
+        </div>
+      </section>
+      <section id="mission" class="mission-section">
+        <h2>Our Mission</h2>
+        <p>
+          To foster innovation, share knowledge, and support the professional
+          growth of our members through conferences, publications, and
+          educational programs. We aim to bridge the gap between academia and
+          industry, empowering the next generation of engineers and leaders.
+        </p>
+      </section>
+      <section id="events" class="events-section">
+        <h2>Upcoming Events</h2>
+        <ul class="events-list">
+          <li>
+            <strong>IAS Technical Talk Series</strong> – September 2025<br />
+            Join us for a series of expert talks on industrial automation and
+            smart energy systems.
+          </li>
+          <li>
+            <strong>Student Project Expo</strong> – October 2025<br />
+            Showcase your innovative projects and network with industry
+            professionals.
+          </li>
+          <li>
+            <strong>IEEE Day Celebration</strong> – November 2025<br />
+            Celebrate IEEE Day with workshops, competitions, and fun activities!
+          </li>
+        </ul>
+      </section>
+      <section id="team" class="team-section">
+        <h2>Meet Our Team</h2>
+        <div class="team-grid">
+          <div class="team-member">
+            <img
+              src="https://randomuser.me/api/portraits/men/32.jpg"
+              alt="Team Member"
+            />
+            <h3>Rahul Nair</h3>
+            <p>Chairperson</p>
+          </div>
+          <div class="team-member">
+            <img
+              src="https://randomuser.me/api/portraits/women/44.jpg"
+              alt="Team Member"
+            />
+            <h3>Anjali Menon</h3>
+            <p>Vice Chairperson</p>
+          </div>
+          <div class="team-member">
+            <img
+              src="https://randomuser.me/api/portraits/men/45.jpg"
+              alt="Team Member"
+            />
+            <h3>Vishnu Kumar</h3>
+            <p>Secretary</p>
+          </div>
+          <div class="team-member">
+            <img
+              src="https://randomuser.me/api/portraits/women/65.jpg"
+              alt="Team Member"
+            />
+            <h3>Priya Suresh</h3>
+            <p>Treasurer</p>
+          </div>
+        </div>
+      </section>
+      <section id="gallery" class="gallery-section">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+          <img
+            src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80"
+            alt="Event 1"
+            class="gallery-img"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80"
+            alt="Event 2"
+            class="gallery-img"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80"
+            alt="Event 3"
+            class="gallery-img"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=400&q=80"
+            alt="Event 4"
+            class="gallery-img"
+          />
+        </div>
+        <div id="lightbox" class="lightbox">
+          <span class="lightbox-close">&times;</span>
+          <img class="lightbox-content" src="" alt="Large Preview" />
+          <div class="lightbox-caption"></div>
+        </div>
+      </section>
+      <section id="newsletter" class="newsletter-section">
+        <h2>Subscribe to Our Newsletter</h2>
+        <form id="newsletterForm">
+          <input
+            type="email"
+            name="newsletter-email"
+            placeholder="Your Email"
+            required
+          />
+          <button type="submit">Subscribe</button>
+        </form>
+        <div id="newsletterMessage"></div>
+      </section>
+      <section id="signup" class="signup-section">
+        <h2>Join IEEE IAS</h2>
+        <form id="signupForm">
+          <input
+            type="text"
+            name="signup-name"
+            placeholder="Your Name"
+            required
+          />
+          <input
+            type="email"
+            name="signup-email"
+            placeholder="Your Email"
+            required
+          />
+          <input
+            type="text"
+            name="signup-college"
+            placeholder="Your College/University"
+            required
+          />
+          <button type="submit">Sign Up</button>
+        </form>
+        <div id="signupMessage"></div>
       </section>
       <section id="contact">
         <h2>Contact Us</h2>
@@ -64,3 +218,4 @@
     <script src="script.js"></script>
   </body>
 </html>
+
