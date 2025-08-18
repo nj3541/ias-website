@@ -1,162 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IEEE IAS - Industry Applications Society</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- ===== HEADER ===== -->
-    <header>
-      <nav>
-        <div class="logo">
-          <img src="Copy of IAS WHITE.png" alt="IAS Logo" class="logo-img ias-logo" />
-          <img src="Copy of IEEE FULL WHITE.png" alt="IEEE Logo" class="logo-img ieee-logo" />
-        </div>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#events">Events</a></li>
-          <li><a href="#team">Team</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#join">Join</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li>
-            <button id="themeToggle" class="theme-btn">🌙</button>
-          </li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IEEE IAS - Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="Copy of IAS WHITE.png" alt="IAS Logo" class="logo-img ias-logo" />
+        <img src="Copy of IEEE FULL WHITE.png" alt="IEEE Logo" class="logo-img ieee-logo" />
+      </div>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button id="darkModeToggle" class="dark-toggle">🌙</button>
+    </nav>
+  </header>
 
-    <!-- ===== HERO ===== -->
-    <main>
-      <section id="home" class="hero">
-        <div class="hero-content">
-          <h1>Welcome to IEEE IAS</h1>
-          <p class="hero-subtitle">
-            Advancing the Theory and Practice of Electrical and Electronic
-            Engineering in Industry
-          </p>
-          <a href="#about" class="cta-btn">Learn More</a>
-        </div>
-      </section>
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Welcome to IEEE IAS</h1>
+      <p class="hero-subtitle">
+        Advancing the Theory and Practice of Electrical and Electronic Engineering in Industry
+      </p>
+      <a href="about.html" class="cta-btn">Learn More</a>
+    </div>
+  </section>
 
-      <!-- ===== ABOUT ===== -->
-      <section id="about">
-        <h2>About IEEE IAS</h2>
-        <p>
-          The IEEE Industry Applications Society (IAS) is a global community of
-          professionals dedicated to advancing the theory and practice of
-          electrical and electronic engineering in industrial and commercial
-          applications.
-        </p>
-        <div class="counters">
-          <div class="counter-box">
-            <span class="counter" data-target="500">0</span>
-            <p>Members</p>
-          </div>
-          <div class="counter-box">
-            <span class="counter" data-target="30">0</span>
-            <p>Events Hosted</p>
-          </div>
-          <div class="counter-box">
-            <span class="counter" data-target="10">0</span>
-            <p>Years of Excellence</p>
-          </div>
-        </div>
-      </section>
+  <!-- About -->
+  <section id="about">
+    <h2>About IEEE IAS</h2>
+    <p>
+      The IEEE Industry Applications Society (IAS) is a global community of
+      professionals dedicated to advancing the theory and practice of electrical
+      and electronic engineering in industrial and commercial applications.
+    </p>
+    <div class="counters">
+      <div class="counter-box">
+        <span class="counter" data-target="500">0</span>
+        <p>Members</p>
+      </div>
+      <div class="counter-box">
+        <span class="counter" data-target="30">0</span>
+        <p>Events Hosted</p>
+      </div>
+      <div class="counter-box">
+        <span class="counter" data-target="10">0</span>
+        <p>Years of Excellence</p>
+      </div>
+    </div>
+  </section>
 
-      <!-- ===== EVENTS ===== -->
-      <section id="events" class="events-section">
-        <h2>Upcoming Events</h2>
-        <ul class="events-list">
-          <li>
-            <strong>IAS Technical Talk Series</strong> – September 2025
-          </li>
-          <li>
-            <strong>Student Project Expo</strong> – October 2025
-          </li>
-          <li>
-            <strong>IEEE Day Celebration</strong> – November 2025
-          </li>
-        </ul>
-      </section>
+  <!-- Events -->
+  <section id="events" class="events-section">
+    <h2>Upcoming Events</h2>
+    <ul class="events-list">
+      <li><strong>IAS Technical Talk Series</strong> – September 2025</li>
+      <li><strong>Student Project Expo</strong> – October 2025</li>
+      <li><strong>IEEE Day Celebration</strong> – November 2025</li>
+    </ul>
+  </section>
 
-      <!-- ===== TEAM ===== -->
-      <section id="team" class="team-section">
-        <h2>Meet Our Team</h2>
-        <div class="team-grid">
-          <div class="team-member">
-            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Rahul" />
-            <h3>Rahul Nair</h3>
-            <p>Chairperson</p>
-          </div>
-          <div class="team-member">
-            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Anjali" />
-            <h3>Anjali Menon</h3>
-            <p>Vice Chairperson</p>
-          </div>
-          <div class="team-member">
-            <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Vishnu" />
-            <h3>Vishnu Kumar</h3>
-            <p>Secretary</p>
-          </div>
-          <div class="team-member">
-            <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Priya" />
-            <h3>Priya Suresh</h3>
-            <p>Treasurer</p>
-          </div>
-        </div>
-      </section>
+  <!-- Team -->
+  <section id="team" class="team-section">
+    <h2>Meet Our Team</h2>
+    <div class="team-grid">
+      <div class="team-member">
+        <img src="assets/team1.jpg" alt="Rahul Nair" />
+        <h3>Rahul Nair</h3>
+        <p>Chairperson</p>
+      </div>
+      <div class="team-member">
+        <img src="assets/team2.jpg" alt="Anjali Menon" />
+        <h3>Anjali Menon</h3>
+        <p>Vice Chairperson</p>
+      </div>
+      <div class="team-member">
+        <img src="assets/team3.jpg" alt="Vishnu Kumar" />
+        <h3>Vishnu Kumar</h3>
+        <p>Secretary</p>
+      </div>
+      <div class="team-member">
+        <img src="assets/team4.jpg" alt="Priya Suresh" />
+        <h3>Priya Suresh</h3>
+        <p>Treasurer</p>
+      </div>
+    </div>
+  </section>
 
-      <!-- ===== GALLERY ===== -->
-      <section id="gallery" class="gallery-section">
-        <h2>Gallery</h2>
-        <div class="gallery-grid">
-          <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="Event 1" class="gallery-img" />
-          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Event 2" class="gallery-img" />
-          <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Event 3" class="gallery-img" />
-          <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=400&q=80" alt="Event 4" class="gallery-img" />
-        </div>
-        <div id="lightbox" class="lightbox">
-          <span class="lightbox-close">&times;</span>
-          <img class="lightbox-content" src="" alt="Preview" />
-          <div class="lightbox-caption"></div>
-        </div>
-      </section>
+  <!-- Gallery -->
+  <section id="gallery" class="gallery-section">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <img src="assets/gallery1.jpg" alt="Event 1" class="gallery-img" />
+      <img src="assets/gallery2.jpg" alt="Event 2" class="gallery-img" />
+      <img src="assets/gallery3.jpg" alt="Event 3" class="gallery-img" />
+      <img src="assets/gallery4.jpg" alt="Event 4" class="gallery-img" />
+    </div>
+  </section>
 
-      <!-- ===== JOIN ===== -->
-      <section id="join" class="signup-section">
-        <h2>Join IEEE IAS</h2>
-        <form id="signupForm">
-          <input type="text" name="signup-name" placeholder="Your Name" required />
-          <input type="email" name="signup-email" placeholder="Your Email" required />
-          <input type="text" name="signup-college" placeholder="Your College" required />
-          <button type="submit">Sign Up</button>
-        </form>
-        <div id="signupMessage"></div>
-      </section>
+  <!-- Newsletter -->
+  <section id="newsletter" class="newsletter-section">
+    <h2>Subscribe to Our Newsletter</h2>
+    <form id="newsletterForm">
+      <input type="email" name="newsletter-email" placeholder="Your Email" required />
+      <button type="submit">Subscribe</button>
+    </form>
+    <div id="newsletterMessage"></div>
+  </section>
 
-      <!-- ===== CONTACT ===== -->
-      <section id="contact">
-        <h2>Contact Us</h2>
-        <form id="contactForm">
-          <input type="text" name="name" placeholder="Your Name" required />
-          <input type="email" name="email" placeholder="Your Email" required />
-          <textarea name="message" placeholder="Your Message" required></textarea>
-          <button type="submit">Send</button>
-        </form>
-        <div id="formMessage"></div>
-      </section>
-    </main>
+  <!-- Join -->
+  <section id="signup" class="signup-section">
+    <h2>Join IEEE IAS</h2>
+    <form id="signupForm">
+      <input type="text" name="signup-name" placeholder="Your Name" required />
+      <input type="email" name="signup-email" placeholder="Your Email" required />
+      <input type="text" name="signup-college" placeholder="Your College/University" required />
+      <button type="submit">Sign Up</button>
+    </form>
+    <div id="signupMessage"></div>
+  </section>
 
-    <!-- ===== FOOTER ===== -->
-    <footer>
-      <p>&copy; 2025 IEEE IAS Student Branch. All rights reserved.</p>
-    </footer>
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <div id="formMessage"></div>
+  </section>
 
-    <script src="script.js"></script>
-  </body>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 IEEE Industry Applications Society (IAS) Student Branch. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
-
