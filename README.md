@@ -4,7 +4,7 @@ This repository contains the official website of IEEE Industry Applications Soci
 
 📂 Project Assets
 
-🌐 Live Website: https://ias-website-nine.vercel.app/
+🌐 Live Website:  https://nj3541.github.io/ias-website/ ,https://ias-website-nine.vercel.app/
 
 📂 GitHub Repository: https://github.com/nj3541/ias-website
 
