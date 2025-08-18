@@ -1,32 +1,53 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // === Contact Form ===
+  // Contact form
   const form = document.getElementById("contactForm");
   const formMessage = document.getElementById("formMessage");
   if (form) {
     form.addEventListener("submit", function (e) {
       e.preventDefault();
-      formMessage.textContent = "✅ Thank you for contacting us!";
+      formMessage.textContent = "✅ Thank you for contacting us! (Demo only)";
       form.reset();
     });
   }
 
-  // === Signup Form ===
+  // Newsletter form
+  const newsletterForm = document.getElementById("newsletterForm");
+  const newsletterMessage = document.getElementById("newsletterMessage");
+  if (newsletterForm) {
+    newsletterForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      newsletterMessage.textContent = "📩 Thank you for subscribing! (Demo only)";
+      newsletterForm.reset();
+    });
+  }
+
+  // Signup form
   const signupForm = document.getElementById("signupForm");
   const signupMessage = document.getElementById("signupMessage");
   if (signupForm) {
     signupForm.addEventListener("submit", function (e) {
       e.preventDefault();
-      signupMessage.textContent = "🎉 Thanks for joining IEEE IAS!";
+      signupMessage.textContent = "🎉 Thank you for signing up! (Demo only)";
       signupForm.reset();
     });
   }
 
-  // === Animated Counters ===
-  const counters = document.querySelectorAll(".counter");
-  let countersAnimated = false;
+  // Smooth scroll
+  document.querySelectorAll('nav a[href^="#"]').forEach((link) => {
+    link.addEventListener("click", function (e) {
+      const target = document.querySelector(this.getAttribute("href"));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: "smooth" });
+      }
+    });
+  });
+
+  // Counter animation
   function animateCounter(counter) {
     const target = +counter.getAttribute("data-target");
-    const increment = Math.ceil(target / 200);
+    const speed = 200;
+    const increment = Math.ceil(target / speed);
     let count = 0;
     function update() {
       count += increment;
@@ -39,11 +60,13 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     update();
   }
+  const counters = document.querySelectorAll(".counter");
+  let countersAnimated = false;
   function handleScrollCounters() {
     const countersSection = document.querySelector(".counters");
     if (!countersSection) return;
     const rect = countersSection.getBoundingClientRect();
-    if (!countersAnimated && rect.top < window.innerHeight) {
+    if (!countersAnimated && rect.top < window.innerHeight && rect.bottom > 0) {
       counters.forEach(animateCounter);
       countersAnimated = true;
     }
@@ -51,34 +74,12 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", handleScrollCounters);
   handleScrollCounters();
 
-  // === Gallery Lightbox ===
-  const galleryImgs = document.querySelectorAll(".gallery-img");
-  const lightbox = document.getElementById("lightbox");
-  const lightboxImg = document.querySelector(".lightbox-content");
-  const lightboxCaption = document.querySelector(".lightbox-caption");
-  const lightboxClose = document.querySelector(".lightbox-close");
-
-  galleryImgs.forEach((img) => {
-    img.addEventListener("click", () => {
-      lightbox.classList.add("active");
-      lightboxImg.src = img.src;
-      lightboxCaption.textContent = img.alt;
-    });
-  });
-  if (lightboxClose) {
-    lightboxClose.addEventListener("click", () => {
-      lightbox.classList.remove("active");
-    });
-  }
-
-  // === Dark Mode Toggle ===
-  const themeToggle = document.getElementById("themeToggle");
-  if (themeToggle) {
-    themeToggle.addEventListener("click", () => {
+  // Dark mode toggle
+  const toggle = document.getElementById("darkModeToggle");
+  if (toggle) {
+    toggle.addEventListener("click", () => {
       document.body.classList.toggle("dark-mode");
-      themeToggle.textContent = document.body.classList.contains("dark-mode")
-        ? "☀️"
-        : "🌙";
+      toggle.textContent = document.body.classList.contains("dark-mode") ? "☀️" : "🌙";
     });
   }
 });
