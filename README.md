@@ -8,9 +8,9 @@ This repository contains the official website of IEEE Industry Applications Soci
 
 📂 GitHub Repository: https://github.com/nj3541/ias-website
 
-🎥 Demo Video: [Google Drive Link Here]
+🎥 Demo Video: https://drive.google.com/file/d/1vmN1qpqO-fNSxgNA216C_sfDvU_UxJZl/view?usp=sharing
 
-📑 Presentation (PPT): [Google Drive Link Here]
+📑 Presentation (PPT): https://docs.google.com/presentation/d/1_jiDTOMamEafFeFRuo-g8YJ9VTv4-caG/edit?usp=sharing&ouid=112399865201821423367&rtpof=true&sd=true
 
 🛠 Tools & Technologies
 
