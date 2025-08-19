@@ -43,6 +43,6 @@ Deployment: GitHub Pages,vercel app
 
 📬 Contact
 
-📧 Email: nayanajoseph3571@gmail.com,threesa524500@sahrdaya.ac.in
+📧 Email: nayanajoseph3571@gmail.com,threesa524500@sahrdaya.ac.in,binu524961@sahrdaya.ac.in
 
 ⚡ Submitted for IEEE SB CEK Web Design Competition
